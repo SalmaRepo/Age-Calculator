@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ubuntu:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  #back {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem 2rem;
+    background-image: linear-gradient(to right bottom, rgb(0, 38, 255), white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: rgb(241, 219, 18);
+      font-family: "Ubuntu", sans-serif;
+      font-size: 4rem;
+    }
+
+    .container {
+      padding: 2rem;
+      width: 100%;
+      border-radius: 1rem;
+      margin: 4rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      background-color: rgba(255, 255, 255, 0.651);
+      backdrop-filter: blur(2rem);
+
+      #birth {
+        border: none;
+        display: flex;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        width: 70%;
+        flex-basis: 1;
+        font-family: sans-serif;
+        font-size: 1.4rem;
+
+      }
+
+      button {
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        background-color: rgb(241, 219, 18);
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        color: rgb(15, 15, 15);
+        flex-basis: 1;
+        box-shadow: 2px 2px 5px 1px rgb(98, 97, 97);
+      }
+    }
+  }
+
+  .result {
+    color: rgb(14, 14, 14);
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.651);
+    font-family: sans-serif;
+    animation: resAnim 0.6s ease-in-out 0.5s normal backwards;
+    .num1,.num2,.num3{
+        color:rgb(235, 62, 122);
+        font-weight: bold;
+        font-size:1.7rem ;
+       
+    }
+  }
+}
+
+@keyframes resAnim {
+  0%{
+    transform: translateY(2rem);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+ 
+}
+
+
+@media (min-width: 760px) {
+    body{
+        #back{
+            .container {
+                width: 60%;
+              }
+              .container{
+                #birth{
+                  font-size: 1.5rem;
+              }
+              button{
+                font-size: 2rem;
+                color: rgb(17, 16, 16);
+                background-color: rgb(247, 227, 70);
+              }
+       
+        }
+      }
+
+        }
+      
+ 
+}
